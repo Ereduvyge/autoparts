@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/default_page.css' %}">
+        <title>Autoparts</title>
+    </head>
+    <body>
+        <div id="header"><h1>Autoparts</h1></div>
+
+          <form method="post" action="search">
+          {% csrf_token %}
+          Введите название запчасти для поиска: <input name="info" type="text">
+          <button type="submit">Поиск</button>
+        </form>
+        {% for shop, url in urls.items %}
+
+        <hr>
+        <p> Смотрите {{info}} на <a href={{url}}>{{shop}}</a> </p>
+
+        {% endfor %}
+
+        <div id = "basediv">
+          <hr id = "basement">
+          <p>2022 Gleb Demidov for BoP</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+h1 {
+    color: #4263f5;
+    font-family: 'Lobster';
+    font-size: 45px;
+    margin-left: 2%;
+}
+
+#header {
+  left: 5%;
+}
+
+form{
+  margin: auto;
+  width: 50%;
+  font-family: 'Lobster';
+  font-size: 18px;
+}
+
+p{
+  font-family: 'Lobster';
+  font-size: 18px;
+  margin-left: 2%;
+}
+
+#basediv {
+  position: fixed;
+  bottom: 1%;
+  left: 35%;
+  width: 100%;
+  font-family: 'Lobster';
+  font-size: 18px;
+}
