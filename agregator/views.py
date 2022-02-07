@@ -1,8 +1,6 @@
 from django.shortcuts import render
 from .forms import search
 import subprocess
-import requests
-from lxml import html
 import re
 
 def default_page(request):
